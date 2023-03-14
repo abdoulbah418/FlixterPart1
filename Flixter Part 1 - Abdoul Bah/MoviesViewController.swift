@@ -21,6 +21,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource {
         movies = Movie.mockMovies
         
         print(movies)
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

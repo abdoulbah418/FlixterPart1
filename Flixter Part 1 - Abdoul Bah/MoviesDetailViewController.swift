@@ -22,6 +22,7 @@ class MoviesDetailViewController: UIViewController {
         super.viewDidLoad()
         
         movieOverviewLabel.numberOfLines = 0
+        
         movieOverviewLabel.sizeToFit()
 
         

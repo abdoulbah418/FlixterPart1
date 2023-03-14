@@ -30,6 +30,7 @@ class MovieCell: UITableViewCell {
         movieOverviewLabel.text = movie.overview
         
         
+        
         Nuke.loadImage(with: movie.posterPath!, into: movieImageView)
     }
 }
