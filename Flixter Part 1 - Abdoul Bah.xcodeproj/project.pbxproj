@@ -9,21 +9,28 @@
 /* Begin PBXBuildFile section */
 		3B314C4529BE7CF000E767FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B314C4429BE7CF000E767FD /* AppDelegate.swift */; };
 		3B314C4729BE7CF000E767FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B314C4629BE7CF000E767FD /* SceneDelegate.swift */; };
-		3B314C4929BE7CF000E767FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B314C4829BE7CF000E767FD /* ViewController.swift */; };
+		3B314C4929BE7CF000E767FD /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B314C4829BE7CF000E767FD /* MoviesViewController.swift */; };
 		3B314C4C29BE7CF000E767FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B314C4A29BE7CF000E767FD /* Main.storyboard */; };
 		3B314C4E29BE7CF100E767FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B314C4D29BE7CF100E767FD /* Assets.xcassets */; };
 		3B314C5129BE7CF100E767FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B314C4F29BE7CF100E767FD /* LaunchScreen.storyboard */; };
+		3B314C5929BE7D8E00E767FD /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B314C5829BE7D8E00E767FD /* Movies.swift */; };
+		3B314C5B29BE832800E767FD /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B314C5A29BE832800E767FD /* MovieCell.swift */; };
+		3B8BE10A29BEDFE80045DA58 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 3B8BE10929BEDFE80045DA58 /* Nuke */; };
+		3B8BE10E29BEF0FC0045DA58 /* MoviesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8BE10D29BEF0FC0045DA58 /* MoviesDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B314C4129BE7CF000E767FD /* Flixter Part 1 - Abdoul Bah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flixter Part 1 - Abdoul Bah.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B314C4429BE7CF000E767FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B314C4629BE7CF000E767FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3B314C4829BE7CF000E767FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B314C4829BE7CF000E767FD /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		3B314C4B29BE7CF000E767FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B314C4D29BE7CF100E767FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B314C5029BE7CF100E767FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B314C5229BE7CF100E767FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B314C5829BE7D8E00E767FD /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		3B314C5A29BE832800E767FD /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		3B8BE10D29BEF0FC0045DA58 /* MoviesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B8BE10A29BEDFE80045DA58 /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +64,12 @@
 		3B314C4329BE7CF000E767FD /* Flixter Part 1 - Abdoul Bah */ = {
 			isa = PBXGroup;
 			children = (
+				3B314C5829BE7D8E00E767FD /* Movies.swift */,
 				3B314C4429BE7CF000E767FD /* AppDelegate.swift */,
 				3B314C4629BE7CF000E767FD /* SceneDelegate.swift */,
-				3B314C4829BE7CF000E767FD /* ViewController.swift */,
+				3B314C4829BE7CF000E767FD /* MoviesViewController.swift */,
+				3B8BE10D29BEF0FC0045DA58 /* MoviesDetailViewController.swift */,
+				3B314C5A29BE832800E767FD /* MovieCell.swift */,
 				3B314C4A29BE7CF000E767FD /* Main.storyboard */,
 				3B314C4D29BE7CF100E767FD /* Assets.xcassets */,
 				3B314C4F29BE7CF100E767FD /* LaunchScreen.storyboard */,
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = "Flixter Part 1 - Abdoul Bah";
+			packageProductDependencies = (
+				3B8BE10929BEDFE80045DA58 /* Nuke */,
+			);
 			productName = "Flixter Part 1 - Abdoul Bah";
 			productReference = 3B314C4129BE7CF000E767FD /* Flixter Part 1 - Abdoul Bah.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 3B314C3829BE7CF000E767FD;
+			packageReferences = (
+				3B8BE10829BEDFE80045DA58 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = 3B314C4229BE7CF000E767FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B314C4929BE7CF000E767FD /* ViewController.swift in Sources */,
+				3B314C4929BE7CF000E767FD /* MoviesViewController.swift in Sources */,
 				3B314C4529BE7CF000E767FD /* AppDelegate.swift in Sources */,
+				3B314C5929BE7D8E00E767FD /* Movies.swift in Sources */,
+				3B314C5B29BE832800E767FD /* MovieCell.swift in Sources */,
+				3B8BE10E29BEF0FC0045DA58 /* MoviesDetailViewController.swift in Sources */,
 				3B314C4729BE7CF000E767FD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +378,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3B8BE10829BEDFE80045DA58 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B8BE10929BEDFE80045DA58 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B8BE10829BEDFE80045DA58 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3B314C3929BE7CF000E767FD /* Project object */;
 }
