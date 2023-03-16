@@ -29,9 +29,10 @@ class MovieCell: UITableViewCell {
         movieTitleLabel.text = movie.title
         movieOverviewLabel.text = movie.overview
         
-        
-        
-        Nuke.loadImage(with: movie.posterPath!, into: movieImageView)
+        if movie.poster_path != nil{
+            Nuke.loadImage(with: URL(string: "https://image.tmdb.org/t/p/w500/" + movie.poster_path!)!, into: movieImageView)
+
+        }
     }
 }
 

@@ -10,7 +10,7 @@ import Nuke
 
 class MoviesDetailViewController: UIViewController {
     var movie: Movie?
-    var posterPath: URL?
+    var poster_path: String?
 
     @IBOutlet weak var movieImageView: UIImageView!
     @IBOutlet weak var movieOverviewLabel: UILabel!
@@ -30,12 +30,12 @@ class MoviesDetailViewController: UIViewController {
             movieTitleLabel.text = movie.title
             movieOverviewLabel.text = movie.overview
             moviePopularityLabel.text = "\(movie.popularity) Popularity"
-            movieVoteAvgLabel.text = "\(movie.voteAverage) Vote Average"
-            movieTotalVotesLabel.text = "\(movie.voteCount) Votes"
+            movieVoteAvgLabel.text = "\(movie.vote_average) Vote Average"
+            movieTotalVotesLabel.text = "\(movie.vote_count) Votes"
         }
         
-        if let posterPath = posterPath {
-                       Nuke.loadImage(with: posterPath, into: movieImageView)
+        if let poster_path = poster_path {
+            Nuke.loadImage(with: URL(string: "https://image.tmdb.org/t/p/w500/" + poster_path)!, into: movieImageView)
                    }
     }
     
